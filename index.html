@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        margin: auto;
+        text-align: center;
+    }
+    button {
+        color: purple;
+        border: 1px solid purple;
+        background: none;
+        font-size: 20px;
+        width: 100px;
+        height: 50px;
+        border-radius: 20px;
+        margin: 10px;
+    }
+</style>
+<body>
+    
+    <div class="container">
+        <h1>Sana olan Aşkım: <span id="number">100</span></h1>
+   
+        <div class="button-group">
+            <button onclick="arttir()">Arttır</button>
+            <button onclick="azalt()">Azalt</button>
+        </div>
+    </div>
+    <script>
+        var sayi = 100; // Başlangıç değeri
+
+        function arttir() {
+            sayi++; // Sayıyı artır
+            document.getElementById("number").innerHTML = sayi; // Sayıyı güncelle
+        }
+        function azalt(){
+            alert("İMKANSIZ")
+        }
+    </script>
+
+</body>
+</html>
